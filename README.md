@@ -1,6 +1,12 @@
 ### Huffman Code
 
-This Python code demonstrates the creation and visualization of a Huffman tree, a method used for data compression. The Huffman tree generates a variable-length prefix code for characters based on their frequencies in a given text.
+This Python code demonstrates the creation and visualization of a Huffman tree, a method used for data compression. The following libraries and dependencies are required:
+
+#### Libraries:
+- `matplotlib` for visualizing the Huffman tree
+
+#### Dependencies:
+- Python 3.12.0
 
 #### Usage:
 - The code defines a `Node` class representing the nodes in the Huffman tree.
@@ -13,7 +19,12 @@ This Python code demonstrates the creation and visualization of a Huffman tree, 
 
 ### How to Use:
 1. Input the text you want to analyze within the code (`text = "YOUR_TEXT_HERE"`).
-2. Run the code to generate the frequency table and visualize the Huffman tree.
+2. Ensure you have Python 3.12.0 installed.
+3. Install the required library:
+    ```
+    pip install matplotlib
+    ```
+4. Run the code to generate the frequency table and visualize the Huffman tree.
 
 ### Note:
 - The code might encounter issues for texts with a limited number of distinct characters, possibly due to plotting constraints.
