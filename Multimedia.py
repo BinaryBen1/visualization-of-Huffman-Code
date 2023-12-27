@@ -71,6 +71,29 @@ def plot_tree_3d(node, x=0, y=0, z=0, ax=None, depth=1, branch_length=1, node_co
 
     return ax
 
+def encoding_huffman_text(root, text):
+    encoding = []
+
+    def find_child(node, char):
+        nonlocal encoding
+
+        if node is None:
+            return
+
+        if node.char == char:
+            return  # Reached the character, stop
+
+        if char in (node.left.char if node.left else ''):
+            encoding.append(0)
+            find_child(node.left, char)
+        elif char in (node.right.char if node.right else ''):
+            encoding.append(1)
+            find_child(node.right, char)
+
+    for char in text:
+        find_child(root, char)
+    return encoding
+
 
 # Huffman Code algorithm
 # Example text
@@ -78,17 +101,25 @@ text = input("Enter a text to code in Huffman: ")
 
 frequency_table = generate_frequency_table(text)
 root = generate_huffman_tree()
+encoding = encoding_huffman_text(root, text)
 
 fig = plt.figure(figsize=(10, 5))
 plt.title('3D Binary Tree Visualization')
 
 ax1 = fig.add_subplot(121, projection='3d')
 ax1 = plot_tree_3d(root, ax=ax1)
+ax1.axis('off')
 
 ax2 = fig.add_subplot(122)
 ax2.axis('off')
 ax2.table(cellText=[[char, freq] for char, freq in frequency_table.items()],
           colLabels=['Buchstabe', 'Häufigkeit'],
           loc='center')
+print(encoding)
+ax3 = fig.add_subplot(122)
+ax3.axis('off')
 
+plt.text(0.4, 0.3, text +' = '+ ''.join(str(x) for x in encoding) , ha='center', va='center', fontsize=15)
+
+plt.axis('off')
 plt.show()

@@ -18,7 +18,7 @@ This Python code demonstrates the creation and visualization of a Huffman tree, 
 - The provided code visualizes the Huffman tree for the text "MISSISSIXXI". The frequency table and the corresponding Huffman tree are displayed using matplotlib.
 
 ### How to Use:
-1. Input the text you want to analyze within the code (`text = "YOUR_TEXT_HERE"`).
+1. Input the text you want to analyze
 2. Ensure you have Python 3.12.0 installed.
 3. Install the required library:
     ```
