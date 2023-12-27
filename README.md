@@ -1,6 +1,3 @@
-Sure, here's a README template for your GitHub repository that explains the purpose of the code and provides instructions on how to use it:
-
----
 
 # Huffman Code Visualization
 
