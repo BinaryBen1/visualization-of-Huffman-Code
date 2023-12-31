@@ -15,12 +15,12 @@ This Python repository includes scripts for visualizing the Huffman coding algor
 
 ## Overview
 
-The repository consists of Python scripts that demonstrate the Huffman coding algorithm's step-by-step process. It visualizes the creation of the Huffman tree, frequency tables, and encoding of text using Huffman coding.
+The repository consists of a Python script that demonstrates & visualizes the Huffman coding algorithm. It visualizes the Huffman tree (3D) , frequency tables, and encoding of text using Huffman coding.
 
 ## Usage
 
-1. **Run the Code:** Clone this repository and execute the `Multimedia.py` script.
-2. **Input Text:** Enter a text string when prompted to create a Huffman tree visualization and display the encoded output.
+1. **Run the Code:** Clone this repository and execute the `Huffman.py` script.
+2. **Input Text:** Enter a text string when prompted to create a Huffman encoding visualization and display the encoded output.
 3. **Visualizations:** The script generates visualizations of the Huffman tree, frequency tables, and encodings using Matplotlib.
 
 ## Example
@@ -45,7 +45,7 @@ The following dependencies are required to run the scripts:
 Install Matplotlib using pip:
 
 ```bash
-pip install matplotlib
+pip3 install matplotlib
 ```
 
 ## Contributing
