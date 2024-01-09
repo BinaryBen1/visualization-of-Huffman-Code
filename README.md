@@ -6,9 +6,9 @@ This Python repository includes scripts for visualizing the Huffman coding algor
 ## Table of Contents
 
 - [Overview](#overview)
-- [Challenge] (#challenge)
-- [Visual Huffman Coding Process] (#visual-Huffman-Coding-Process)
-- [Visualization Approach] (#visualization-approach)
+- [Challenge](#challenge)
+- [Visual Huffman Coding Process](#visual-huffman-coding-process)
+- [Visualization Approach](#visualization-approach)
 - [Usage](#usage)
 - [Example](#example)
 - [Getting Started](#getting-started)
