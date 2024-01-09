@@ -28,7 +28,7 @@ Our challenge here is to create a three-dimensional visualization of Huffman cod
 
 1. **Frequency Analysis:** Begin by analyzing the frequency of individual characters in the given Text.
 2. **Building the Huffman Tree:** Select the two least frequent characters and combine then into a node, with the sum of their frequencies becoming the value of the new node. Repeat this process until all characters are merged into a single binary tree.
-3. **Assigning Binary Codes:** Traverse the tree to assign a binary code 5o each leaf (original character). Assign '0' to each left path and '1' to each right path. This coding results in the Huffman Coding, where shorter codes represent more frequent characters and longer codes represent rarer characters. This knowledge is then used to create the new "encoded data word".
+3. **Assigning Binary Codes:** Traverse the tree to assign a binary code to each leaf (original character). Assign '0' to each left path and '1' to each right path. This coding results in the Huffman Coding, where shorter codes represent more frequent characters and longer codes represent rarer characters. This knowledge is then used to create the new "encoded data word".
 
 ## Visualization Approach
 
